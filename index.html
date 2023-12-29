@@ -1,0 +1,89 @@
+<html>
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@100;400;800&family=Pacifico&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/index_style.css">
+    </head>
+    <body class="text-center position-relative p-1 m-0">
+      <div class=" my-3">
+        <h1 class=" position-relative d-inline-block justify-content-center my-5">
+          Bookmarker
+        </h1>
+      </div>
+
+      <div class="container pt-5 cont">
+        <h2 class="d-inline-block">
+          <i class="fa-solid fa-bookmark fs-3"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark fs-3"></i>
+        </h2>
+        <div class="inputs d-flex flex-column align-items-start my-4 gap-2">
+          <label for="siteName">
+            <i class="fa-solid fa-book fs-6"></i> Site Name
+          </label>
+          <input type="text"  id="siteName" placeholder="Bookmark Name" class="form-control mb-3">
+          <label for="siteUrl">
+            <i class="fa-solid fa-link fs-6"></i> Site URL
+          </label>
+          <input type="url"  id="siteUrl" placeholder="Website URL" class="form-control mb-3">
+
+          <button class="btn btn-primary align-self-center px-3 fs-5" id="submit">Submit</button>
+        </div>
+
+
+      </div>
+      <table class="container bg-light text-center mx-auto my-3">
+        <thead>
+          <tr class="border-bottom">
+            <th class="fs-5 py-2" >index</th>
+          <th class="fs-5 py-2">Website Name</th>
+          <th class="fs-5 py-2">Visit</th>
+          <th  class="fs-5 py-2">Delete</th>
+
+          </tr>
+                  </thead>
+        <tbody id="demo">
+          
+        </tbody>
+       
+
+      </table>
+      <div class="d-none" id="over">
+
+      
+      <div class="overlay  d-block ">
+
+        <div class="modal d-flex text-start pop" id="overlay" tabindex="1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+              <div class="modal-body p-4">
+                <button type="button" onclick="closeOverLay()" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5>Site Name or Url is not valid, Please follow the rules below </h5>
+                <ul class="text-start">
+                  <li class="my-3">
+                    <i class="fa-solid fa-arrow-right"></i> Site name must contain at least 3 characters
+                  </li>
+                  <li class="my-3">
+                    <i class="fa-solid fa-arrow-right"></i> Site URL must be a valid one
+                  </li>
+  
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+      
+
+        <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js"></script>
+       
+    </body>
+</html>
+
+
